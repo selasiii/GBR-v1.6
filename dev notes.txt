@@ -4,3 +4,5 @@
 ---added admin and agent controllers(App\Http\Controllers\Auth)
 ---added guards and providers
 ---added role seeders(admin&agent)
+---added middleware to check user auth guards &registered in kernel
+---added routes for multi-auth views
