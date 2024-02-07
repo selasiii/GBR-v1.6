@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->uuid('package_id')->primary();
-            $table->foreignUuid('customer_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignUuid('customer_id')->references('customer_id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignUuid('ticket_id')->references('ticket_id')->on('tickets')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignUuid('travel_id')->references('travel_id')->on('travels')->onUpdate('cascade')->onDelete('cascade');
             $table->text('contents')->nullable();

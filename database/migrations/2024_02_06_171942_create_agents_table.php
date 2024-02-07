@@ -12,9 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('agents', function (Blueprint $table) {
-            $table->id('agent_id');
-            $table->uuid('id')->unique();
-            $table->foreignId('role_id')->constrained();
+            $table->id('id');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();

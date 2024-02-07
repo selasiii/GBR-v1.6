@@ -37,4 +37,6 @@ class Agent extends Authenticatable
         'email_verified_at' => 'datetime',
         'date_of_birth' => 'date',
     ];
+
+    protected $guard = 'agent';
 }

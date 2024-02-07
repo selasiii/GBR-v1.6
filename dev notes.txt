@@ -2,6 +2,5 @@
 ---published spatie
 ---added modified migrations
 ---added admin and agent controllers(App\Http\Controllers\Auth)
-
-
-
+---added guards and providers
+---added role seeders(admin&agent)

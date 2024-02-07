@@ -17,7 +17,7 @@ return new class extends Migration
             $table->dateTime('expiry_date');
             $table->double('price');
             $table->enum('status', ['valid', 'invalid'])->default('valid');
-            $table->foreignUuid('customer_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignUuid('customer_id')->references('customer_id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignUuid('travel_id')->references('travel_id')->on('travels')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignUuid('payment_id')->references('payment_id')->on('payments')->onUpdate('cascade')->onDelete('cascade');
             $table->rememberToken();

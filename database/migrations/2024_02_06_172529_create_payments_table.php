@@ -17,7 +17,7 @@ return new class extends Migration
             $table->dateTime('date');
             $table->string('payment_method');
             $table->enum('status', ['incomplete', 'complete'])->default('incomplete');
-            $table->foreignUuid('customer_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignUuid('customer_id')->references('customer_id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
             }
