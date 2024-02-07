@@ -1,5 +1,7 @@
 ---installled breeze & spatie
 ---published spatie
 ---added modified migrations
+---added admin and agent controllers(App\Http\Controllers\Auth)
+
 
 
